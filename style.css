@@ -1,0 +1,151 @@
+/* Hero Section Styles */
+.hero-section {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-video {
+    object-fit: cover;
+    height: 100vh;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* General Styles */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Custom Utility Classes */
+.text-primary {
+    color: #007bff !important;
+}
+
+.bg-primary {
+    background-color: #007bff !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 60vh;
+    }
+    
+    .hero-video {
+        height: 60vh;
+    }
+}
+
+/* About Page Styles */
+.history-timeline {
+    position: relative;
+    padding: 20px;
+    border-left: 2px solid #007bff;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -11px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #007bff;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.about-hero {
+    margin-bottom: 50px;
+}
+
+/* Branches Page Styles */
+.branch-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.branch-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.modal {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.branches-hero {
+    margin-bottom: 50px;
+}
+
+/* Custom Scrollbar for Modal */
+.modal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Ministries Page Styles */
+.ministry-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ministry-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.ministries-hero {
+    margin-bottom: 50px;
+}
+
+.ministry-leader-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Contact Page Styles */
+.contact-hero {
+    margin-bottom: 50px;
+}
+
+.contact-card {
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}

@@ -1,0 +1,145 @@
+/* Church Theme Styles */
+:root {
+    --church-primary: #8b0000;     /* Deep red */
+    --church-secondary: #d4af37;   /* Gold */
+    --church-accent: #1e2f4d;      /* Navy blue */
+    --church-light: #f5f2eb;       /* Warm light */
+    --church-dark: #2c1810;        /* Deep brown */
+}
+
+/* General Theme Styles */
+body {
+    font-family: 'Crimson Text', serif;
+    color: var(--church-dark);
+    background-color: var(--church-light);
+}
+
+.navbar {
+    background-color: var(--church-dark);
+}
+
+.navbar-brand {
+    font-family: 'Cinzel', serif;
+    color: var(--church-secondary) !important;
+}
+
+.nav-link {
+    color: var(--church-light) !important;
+    font-family: 'Cinzel', serif;
+}
+
+.nav-link:hover {
+    color: var(--church-secondary) !important;
+}
+
+/* Hero Sections */
+.hero-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-overlay {
+    background: linear-gradient(rgba(44, 24, 16, 0.7), rgba(44, 24, 16, 0.7));
+    padding: 100px 0;
+}
+
+/* Section Headers */
+.section-header {
+    font-family: 'Cinzel', serif;
+    color: var(--church-primary);
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.section-header:after {
+    content: '✟';
+    display: block;
+    color: var(--church-secondary);
+    margin-top: 0.5rem;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: white;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: var(--church-primary);
+    font-family: 'Cinzel', serif;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--church-primary);
+    border-color: var(--church-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--church-accent);
+    border-color: var(--church-accent);
+}
+
+.btn-outline-primary {
+    color: var(--church-primary);
+    border-color: var(--church-primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--church-primary);
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: var(--church-dark);
+    color: var(--church-light);
+    padding: 3rem 0;
+}
+
+footer h5 {
+    color: var(--church-secondary);
+    font-family: 'Cinzel', serif;
+}
+
+/* Decorative Elements */
+.cross-divider {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--church-secondary);
+    margin: 2rem 0;
+}
+
+.cross-divider::before,
+.cross-divider::after {
+    content: '—';
+    margin: 0 1rem;
+    color: var(--church-primary);
+}
+
+/* Map Customization */
+.leaflet-container {
+    border-radius: 10px;
+    border: 3px solid var(--church-secondary);
+}
+
+/* Form Elements */
+.form-control {
+    border: 1px solid rgba(139, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    border-color: var(--church-primary);
+    box-shadow: 0 0 0 0.2rem rgba(139, 0, 0, 0.25);
+} 
